@@ -33,6 +33,12 @@
 		81463733248A25AB00EDDA1A /* lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = 81463713248A25AA00EDDA1A /* lexer.c */; };
 		81463734248A25AB00EDDA1A /* entities.c in Sources */ = {isa = PBXBuildFile; fileRef = 81463716248A25AA00EDDA1A /* entities.c */; };
 		81463735248A25AB00EDDA1A /* mappedio.c in Sources */ = {isa = PBXBuildFile; fileRef = 81463719248A25AB00EDDA1A /* mappedio.c */; };
+		81463741248A4A8200EDDA1A /* buffio.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81463738248A25D900EDDA1A /* buffio.h */; };
+		81463742248A4A8200EDDA1A /* platform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8146373B248A25D900EDDA1A /* platform.h */; };
+		81463743248A4A8200EDDA1A /* tidy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81463737248A25D900EDDA1A /* tidy.h */; };
+		81463744248A4A8200EDDA1A /* tidybuffio.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8146373A248A25D900EDDA1A /* tidybuffio.h */; };
+		81463745248A4A8200EDDA1A /* tidyenum.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81463736248A25D800EDDA1A /* tidyenum.h */; };
+		81463746248A4A8200EDDA1A /* tidyplatform.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 81463739248A25D900EDDA1A /* tidyplatform.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +48,12 @@
 			dstPath = include/tidy;
 			dstSubfolderSpec = 16;
 			files = (
+				81463741248A4A8200EDDA1A /* buffio.h in CopyFiles */,
+				81463742248A4A8200EDDA1A /* platform.h in CopyFiles */,
+				81463743248A4A8200EDDA1A /* tidy.h in CopyFiles */,
+				81463744248A4A8200EDDA1A /* tidybuffio.h in CopyFiles */,
+				81463745248A4A8200EDDA1A /* tidyenum.h in CopyFiles */,
+				81463746248A4A8200EDDA1A /* tidyplatform.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

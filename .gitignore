@@ -17,3 +17,6 @@ temp*
 .idea
 *.old
 .DS_Store
+
+# Xcode
+xcuserdata
