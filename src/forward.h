@@ -15,7 +15,7 @@
 
 */
 
-#include "platform.h"
+#include "tidyplatform.h"
 #include "tidy.h"
 
 /* Internal symbols are prefixed to avoid clashes with other libraries */
@@ -31,7 +31,10 @@ typedef struct _StreamOut StreamOut;
 struct _TidyDocImpl;
 typedef struct _TidyDocImpl TidyDocImpl;
 
+struct _TidyMessageImpl;
+typedef struct _TidyMessageImpl TidyMessageImpl;
 
+/* @todo: this name isn't very instructive! */
 struct _Dict;
 typedef struct _Dict Dict;
 

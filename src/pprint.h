@@ -5,7 +5,7 @@
   
    (c) 1998-2007 (W3C) MIT, ERCIM, Keio University
    See tidy.h for the copyright notice.
-
+  
 */
 
 #include "forward.h"
@@ -53,16 +53,12 @@ typedef struct _TidyPrintImpl
     uint lbufsize;
     uint linelen;
     uint wraphere;
+    uint line;
   
     uint ixInd;
     TidyIndent indent[2];  /* Two lines worth of indent state */
 } TidyPrintImpl;
 
-
-#if 0 && SUPPORT_ASIAN_ENCODINGS
-/* #431953 - start RJ Wraplen adjusted for smooth international ride */
-uint CWrapLen( TidyDocImpl* doc, uint ind );
-#endif
 
 void TY_(InitPrintBuf)( TidyDocImpl* doc );
 void TY_(FreePrintBuf)( TidyDocImpl* doc );
@@ -84,5 +80,10 @@ void TY_(PPrintTree)( TidyDocImpl* doc, uint mode, uint indent, Node *node );
 
 void TY_(PPrintXMLTree)( TidyDocImpl* doc, uint mode, uint indent, Node *node );
 
+/*\
+ * 20150515 - support using tabs instead of spaces
+\*/
+void TY_(PPrintTabs)(void);
+void TY_(PPrintSpaces)(void);
 
 #endif /* __PPRINT_H__ */
